@@ -1,3 +1,6 @@
 const strapi = require('@strapi/strapi');
-// @ts-ignore
-strapi().start();
+strapi({
+  distDir: './build', // <--- this is important
+  autoReload: false,
+  serveAdminPanel: true,
+}).start();

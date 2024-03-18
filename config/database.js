@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.exports = ({ env }) => {
+export default ({ env }) => {
   const client = env('DATABASE_CLIENT');
 
   const connections = {
